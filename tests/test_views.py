@@ -17,3 +17,8 @@ class TestViews(unittest.TestCase):
             response = self.app.post('/', data={'city': city})
             self.assertEqual(response.status_code, 200)
             self.assertIn(bytes(city, 'utf-8'), response.data)
+
+    # Test to verify that the temperature is displayed in Celsius
+    def test_temperature_display_in_celsius(self):
+        response = self.app.get('/')
+        self.assertIn('°C', response.data.decode('utf-8'))
