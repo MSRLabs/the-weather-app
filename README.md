@@ -23,6 +23,10 @@ To run the application, execute the following command in the project directory:
 python run.py
 Then, open your web browser and navigate to http://localhost:5000.
 
+# New Feature: Celsius Temperature Display
+
+The application now supports displaying the temperature in Celsius. This update allows users from regions that use the Celsius scale to easily understand the weather information without needing to convert it from Kelvin or Fahrenheit.
+
 # Files
 
 - app/views.py: Contains the Flask routes and the main logic of the application.
